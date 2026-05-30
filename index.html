@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chat-container">
+<div class="ai-avatar-container">
+
+    <div class="ai-glow"></div>
+<div class="status-ring" id="statusRing"></div>
+    <img
+        src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+        class="ai-avatar"
+        id="aiAvatar"
+    >
+
+</div>
+    <div class="chat-header">
+        Welcome King to the AI World!
+        <div class="chat-subtitle">
+            I am your loyal AI assistant
+        </div>
+    </div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="chat-input">
+        <button onclick="toggleListening()">            ️
+</button>
+
+        <select id="personality">
+
+    <option value="assistant">
+        Assistant
+    </option>
+
+    <option value="teacher">
+        Teacher
+    </option>
+
+    <option value="programmer">
+        Programmer
+    </option>
+
+    <option value="motivator">
+        Motivator
+    </option>
+
+    <option value="poet">
+        Poet
+    </option>
+
+</select>
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ask anything..."
+        >
+
+        <button onclick="startVoice()">
+    🎤
+</button>
+
+<button onclick="sendMessage()">
+    Send
+</button>
+    <button onclick="clearChat()">
+    Clear Chat
+</button>
+
+<button onclick="downloadChat()">
+    📄 Download Chat
+</button>
+
+<button onclick="toggleTheme()">
+    🌙 Theme
+</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
