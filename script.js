@@ -32,6 +32,7 @@ async function sendMessage(){
 `;
 
     chatBox.appendChild(userDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
 
     input.value = "";
 
@@ -93,6 +94,7 @@ botDiv.innerHTML = `
 `;
 
 chatBox.appendChild(botDiv);
+chatBox.scrollTop = chatBox.scrollHeight;
 const speech = new SpeechSynthesisUtterance(data.reply);
 
 speech.lang = "en-US";
