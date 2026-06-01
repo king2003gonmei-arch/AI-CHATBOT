@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS chats (
 conn.commit()
 
 client = Groq(
-    api_key="gsk_API KEY"
+    api_key="YOUR API KEY HERE"
 )
 
 @app.route("/chat", methods=["POST"])
